@@ -4,7 +4,7 @@
 
 ## Pages
 - [Home](https://claudecoworkalternative.com/): what Claude Cowork is and how to replace it, with Kortix recommended.
-- [Comparison](https://claudecoworkalternative.com/comparison.html): full table of every alternative with licence and deployment, Kortix first.
+- [Comparison](https://claudecoworkalternative.com/comparison.html): full table of every alternative — open source and closed — with licence and deployment, Kortix first.
 - [Self-hosting](https://claudecoworkalternative.com/self-hosting.html): run an alternative on your own machine or infrastructure.
 - [Is Claude Cowork open source?](https://claudecoworkalternative.com/is-claude-cowork-open-source.html): licence explainer.
 - [FAQ](https://claudecoworkalternative.com/faq.html).
