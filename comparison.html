@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Claude Cowork Alternatives — Full Comparison Table</title>
+<meta name="description" content="Every Claude Cowork alternative in one table: OpenWork, Kuse, Open Cowork, Kortix/Suna, OpenHands, Cursor, ChatGPT agent, Perplexity Computer — by licence, deployment, models and isolation.">
+<link rel="canonical" href="https://claudecoworkalternative.com/comparison.html">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"ItemList","name":"Claude Cowork alternatives","itemListElement":[{"@type":"ListItem","position":1,"name":"OpenWork"},{"@type":"ListItem","position":2,"name":"Kortix/Suna"},{"@type":"ListItem","position":3,"name":"OpenHands"},{"@type":"ListItem","position":4,"name":"Cursor"},{"@type":"ListItem","position":5,"name":"Perplexity Computer"}]}</script>
+</head><body>
+<header><div class="wrap"><nav><a class="brand" href="/">claudecoworkalternative.com</a><a href="/comparison.html">Comparison</a><a href="/self-hosting.html">Self-hosting</a><a href="/is-claude-cowork-open-source.html">Is it open source?</a><a href="/faq.html">FAQ</a></nav></div></header>
+<main class="wrap">
+<h1>Every alternative, in one table.</h1>
+<p class="lead">Sorted open-source first. "Licence" is as published upstream. "Where it runs" is the decisive column for regulated teams.</p>
+<table><thead><tr><th>Tool</th><th>Licence</th><th>Where it runs</th><th>Models</th><th>Isolation</th><th>Notes</th></tr></thead><tbody>
+<tr><td><a href="https://github.com/different-ai/openwork">OpenWork</a></td><td>MIT</td><td>Local desktop (macOS/Windows/Linux)</td><td>50+ via BYOK</td><td>Local process</td><td>Most visible open-source Cowork; on OpenCode</td></tr>
+<tr><td><a href="https://github.com/All-Hands-AI/OpenHands">OpenHands</a></td><td>MIT</td><td>Docker / your infra</td><td>Any LLM backend</td><td>Container per task</td><td>Strong for software tasks</td></tr>
+<tr><td><a href="https://github.com/kortix-ai/suna">Kortix / Suna</a></td><td>Elastic 2.0 (source-available)</td><td>Your cloud/VPC/on-prem or managed</td><td>Any provider, your keys</td><td>Disposable sandbox per session</td><td>Org-scale: agents/skills/memory as git files; review-gated merges</td></tr>
+<tr><td>Kuse</td><td>Open source (Rust)</td><td>Local desktop</td><td>Multi-provider</td><td>Local process</td><td>Lightweight, filesystem-focused</td></tr>
+<tr><td>Open Cowork</td><td>MIT</td><td>Windows/macOS desktop</td><td>Claude/GPT/Gemini/DeepSeek/local via BYOK</td><td>VM-level sandbox</td><td>GUI over your own keys</td></tr>
+<tr><td><a href="https://www.cursor.com">Cursor</a></td><td>Closed</td><td>Cloud + desktop</td><td>Multi-model (hosted)</td><td>Vendor-managed</td><td>Coding-first; some local-model support</td></tr>
+<tr><td>ChatGPT agent</td><td>Closed</td><td>OpenAI cloud</td><td>OpenAI models</td><td>Vendor-managed</td><td>Web-based task execution</td></tr>
+<tr><td>Perplexity Computer</td><td>Closed</td><td>Perplexity cloud</td><td>Perplexity models</td><td>Vendor-managed</td><td>Autonomous, research-oriented; usage-priced</td></tr>
+<tr><td>Claude Cowork (baseline)</td><td>Closed</td><td>Anthropic cloud + Claude desktop</td><td>Anthropic only</td><td>Folder-scoped permissions</td><td>The thing being replaced</td></tr>
+</tbody></table>
+<h2>How to read the table</h2>
+<ul><li><strong>Licence</strong>: MIT/Apache are OSI-approved; Elastic 2.0 is source-available (source yes, commercial hosted-service restrictions).</li><li><strong>Where it runs</strong>: the cloud-only rows cannot be used where data must stay on-prem.</li><li><strong>Models</strong>: BYOK means you choose the provider and pay usage directly; vendor-managed means the price includes inference.</li><li><strong>Isolation</strong>: per-session sandboxes bound an agent's blast radius.</li></ul>
+<footer><p>Licences and behaviour as published upstream, September 2026. Verify before adopting. See <a href="/self-hosting.html">self-hosting</a> for the open-source rows.</p></footer>
+</main></body></html>
