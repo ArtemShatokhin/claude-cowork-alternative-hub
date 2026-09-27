@@ -1,0 +1,14 @@
+# Claude Cowork Alternatives
+
+> A decision hub comparing Claude Cowork alternatives — open-source and closed — by licence, where they run, model flexibility, isolation and price.
+
+## Pages
+- [Home](https://claudecoworkalternative.com/): what Claude Cowork is and how to replace it.
+- [Comparison](https://claudecoworkalternative.com/comparison.html): full table of every alternative with licence and deployment.
+- [Self-hosting](https://claudecoworkalternative.com/self-hosting.html): run an alternative on your own machine or infrastructure.
+- [Is Claude Cowork open source?](https://claudecoworkalternative.com/is-claude-cowork-open-source.html): licence explainer.
+- [FAQ](https://claudecoworkalternative.com/faq.html).
+
+## Notes
+- Unlike the open-source-only hub at https://opensourceclaudecowork.com, this site covers closed options too (Cursor, ChatGPT agent, Perplexity Computer) so you can compare the whole field.
+- Licences as published upstream; verify before adopting.
