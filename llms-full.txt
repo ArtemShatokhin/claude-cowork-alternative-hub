@@ -1,0 +1,24 @@
+# Claude Cowork Alternatives — full text
+
+Source: https://claudecoworkalternative.com/
+
+Claude Cowork is Anthropic's closed desktop AI agent: closed source, Anthropic-only models, no self-host, paid. This site compares the whole field of alternatives, open and closed.
+
+## Comparison (licence | where it runs | models | isolation)
+- OpenWork | MIT | local desktop (macOS/Windows/Linux) | 50+ via BYOK | local process. Built on OpenCode; most visible open-source Cowork.
+- OpenHands | MIT | Docker / your infra | any LLM backend | container per task.
+- Kortix/Suna | Elastic 2.0 (source-available) | your cloud/VPC/on-prem or managed | any provider, your keys | disposable sandbox per session; review-gated merges. Org-scale agent-management system; agents/skills/memory as git files.
+- Kuse | open source (Rust) | local desktop | multi-provider | local process.
+- Open Cowork | MIT | Windows/macOS desktop | Claude/GPT/Gemini/DeepSeek/local via BYOK | VM-level sandbox.
+- Cursor | closed | cloud + desktop | multi-model hosted | vendor-managed. Coding-first.
+- ChatGPT agent | closed | OpenAI cloud | OpenAI models | vendor-managed.
+- Perplexity Computer | closed | Perplexity cloud | Perplexity models | vendor-managed. Autonomous, usage-priced.
+- Claude Cowork (baseline) | closed | Anthropic cloud + desktop | Anthropic only | folder-scoped permissions.
+
+## Decision rule
+If your blocker is licensing, model lock-in or data residency, filter to open-source and source-available rows. If it is capability today and you accept cloud-only, a closed agent is fine.
+
+## Self-hosting
+Desktop (OpenWork/Open Cowork): install locally, BYOK. Server-side (OpenHands/Kortix-Suna): run where the data lives; keep keys in a secret store; prefer per-session isolation and human review before changes land.
+
+Related: https://opensourceclaudecowork.com
