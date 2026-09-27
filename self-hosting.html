@@ -1,0 +1,26 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Self-Hosting a Claude Cowork Alternative</title>
+<meta name="description" content="How to self-host an open-source Claude Cowork alternative: OpenWork on your desktop, OpenHands in Docker, or Kortix/Suna on your own infrastructure.">
+<link rel="canonical" href="https://claudecoworkalternative.com/self-hosting.html">
+<link rel="stylesheet" href="/styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Self-host a Claude Cowork alternative","step":[{"@type":"HowToStep","name":"Choose desktop or server"},{"@type":"HowToStep","name":"Install from the upstream repo"},{"@type":"HowToStep","name":"Add your model keys"},{"@type":"HowToStep","name":"Scope access and verify"}]}</script>
+</head><body>
+<header><div class="wrap"><nav><a class="brand" href="/">claudecoworkalternative.com</a><a href="/comparison.html">Comparison</a><a href="/self-hosting.html">Self-hosting</a><a href="/is-claude-cowork-open-source.html">Is it open source?</a><a href="/faq.html">FAQ</a></nav></div></header>
+<main class="wrap">
+<h1>Self-hosting a Claude Cowork alternative.</h1>
+<p class="lead">The reason to self-host is control: your files, your keys, your audit trail. Two shapes are common — a desktop app on your own machine, and a server-side platform in your infra.</p>
+<h2>Desktop: OpenWork / Open Cowork</h2>
+<p>These install like normal desktop apps and run the agent locally against a folder you choose. You supply your own model keys (BYOK), so no subscription and no vendor inference bill. Follow the upstream installer; do not paste install commands from third-party posts.</p>
+<h2>Server-side: OpenHands / Kortix-Suna</h2>
+<p>For team or org use, run it where the data lives:</p>
+<pre># OpenHands - container runtime per task (see repo for current image)
+docker run -it --rm -p 3000:3000 -v /var/run/docker.sock:/var/run/docker.sock docker.all-hands.dev/all-hands-ai/openhands:latest
+
+# Kortix/Suna - self-host from Docker images, then point the CLI at your host
+# see https://github.com/kortix-ai/suna for the current quickstart
+#   kortix self-host start
+#   kortix hosts use selfhost</pre>
+<h2>Add your model keys, then scope access</h2>
+<ul><li>Put provider keys in a secret store, not in the repo. Ideally the platform brokers credentials so the raw key never reaches the agent's sandbox.</li><li>Grant the agent the narrowest folder/tool access that does the job.</li><li>Prefer platforms with per-session isolation and a human review step before changes land — that is the difference between a demo and something you can run in a company.</li></ul>
+<footer><p>Always cross-check commands against the upstream repository before production use.</p></footer>
+</main></body></html>
