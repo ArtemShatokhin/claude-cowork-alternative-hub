@@ -18,18 +18,12 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "has": [{ "type": "header", "key": "x-md-test", "value": "1" }],
-      "destination": "/index.md"
-    },
-    {
-      "source": "/",
-      "has": [{ "type": "query", "key": "md", "value": "1" }],
-      "destination": "/index.md"
-    },
-    {
-      "source": "/",
+      "source": "/index.html",
       "has": [{ "type": "header", "key": "accept", "value": "(.*)text/markdown(.*)" }],
+      "destination": "/index.md"
+    },
+    {
+      "source": "/",
       "destination": "/index.md"
     },
     {
