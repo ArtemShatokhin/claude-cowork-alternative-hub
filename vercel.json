@@ -16,22 +16,25 @@
       "headers": [{ "key": "Content-Type", "value": "text/markdown; charset=utf-8" }]
     }
   ],
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/(index\\.html)?",
+      "source": "/",
       "has": [{ "type": "header", "key": "accept", "value": "(.*)text/markdown(.*)" }],
-      "destination": "/index.md"
+      "destination": "/index.md",
+      "permanent": false
     },
     {
       "source": "/:page([a-z0-9-]+).html",
       "has": [{ "type": "header", "key": "accept", "value": "(.*)text/markdown(.*)" }],
-      "destination": "/:page.md"
+      "destination": "/:page.md",
+      "permanent": false
     },
     {
       "source": "/:page([a-z0-9-]+)",
       "has": [{ "type": "header", "key": "accept", "value": "(.*)text/markdown(.*)" }],
-      "destination": "/:page.md"
+      "destination": "/:page.md",
+      "permanent": false
     }
   ],
-  "redirects": []
+  "rewrites": []
 }
