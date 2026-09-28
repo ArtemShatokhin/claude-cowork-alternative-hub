@@ -18,12 +18,8 @@
   ],
   "rewrites": [
     {
-      "source": "/index.html",
+      "source": "/(index\\.html)?",
       "has": [{ "type": "header", "key": "accept", "value": "(.*)text/markdown(.*)" }],
-      "destination": "/index.md"
-    },
-    {
-      "source": "/",
       "destination": "/index.md"
     },
     {
