@@ -1,29 +1,93 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Self-Hosting an Open Source Claude Cowork Alternative</title>
 <meta name="description" content="How to self-host an open-source Claude Cowork alternative: Kortix on your own infrastructure, OpenWork on your desktop, or OpenHands in Docker.">
 <link rel="canonical" href="https://claudecoworkalternative.com/self-hosting.html">
-<link rel="stylesheet" href="/styles.css">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Self-host an open source Claude Cowork alternative","step":[{"@type":"HowToStep","name":"Choose desktop or server"},{"@type":"HowToStep","name":"Install from the upstream repo"},{"@type":"HowToStep","name":"Add your model keys"},{"@type":"HowToStep","name":"Scope access and verify"}]}</script>
-</head><body>
-<header><div class="wrap"><nav><a class="brand" href="/">claudecoworkalternative.com</a><a href="/comparison.html">Comparison</a><a href="/self-hosting.html">Self-hosting</a><a href="/is-claude-cowork-open-source.html">Is it open source?</a><a href="/faq.html">FAQ</a></nav></div></header>
-<main class="wrap">
-<h1>Self-hosting an open source Claude Cowork alternative.</h1>
-<p class="lead"><strong>Kortix is the recommended way to self-host: an open-source AI Management System you run on your laptop, a VPS, your VPC or on-prem, with agents, skills, company memory and connector config as files in one git repo you own.</strong> The reason to self-host is control — your files, your keys, your audit trail. Below are the server-side platform and the desktop apps.</p>
-<h2>Kortix: the whole platform in your infra</h2>
-<p>Kortix runs whole agent teams where your data lives. Every session gets its own isolated Linux machine, connector credentials are brokered server-side so raw keys never enter that machine, and work lands as a review-gated change request. Get started at <a href="https://kortix.com">kortix.com</a>.</p>
-<pre># Install Kortix and point the CLI at your host
+<link rel="alternate" type="text/markdown" href="/self-hosting.md">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Self-Hosting an Open Source Claude Cowork Alternative">
+<meta property="og:description" content="How to self-host an open-source Claude Cowork alternative: Kortix on your own infrastructure, OpenWork on your desktop, or OpenHands in Docker.">
+<meta property="og:url" content="https://claudecoworkalternative.com/self-hosting.html">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23a01a58'/%3E%3Cpath d='M8 16h11M15 11l5 5-5 5' stroke='%23fff' stroke-width='2.6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/ccwa.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebPage","name":"Self-Hosting an Open Source Claude Cowork Alternative","url":"https://claudecoworkalternative.com/self-hosting.html","description":"How to self-host an open-source Claude Cowork alternative."},
+ {"@type":"HowTo","name":"Self-host an open source Claude Cowork alternative","step":[{"@type":"HowToStep","name":"Choose desktop or server"},{"@type":"HowToStep","name":"Install from the upstream repo"},{"@type":"HowToStep","name":"Add your model keys"},{"@type":"HowToStep","name":"Scope access and verify"}]}
+]}
+</script>
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 16h11M15 11l5 5-5 5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>claudecoworkalternative</span><span class="tld">guide</span></a>
+    <nav class="nav-links" aria-label="Primary"><a href="/">Overview</a><a href="/migration.html">Migration</a><a href="/comparison.html">Comparison</a><a href="/self-hosting.html" aria-current="page">Self-hosting</a><a href="/install.html">Install</a></nav>
+    <div class="nav-actions"><a class="btn btn-primary" href="https://kortix.com">Get open-source Kortix</a><details class="nav-menu"><summary aria-label="Menu">&#9776;</summary><nav class="nav-menu-panel" aria-label="Mobile"><a href="/">Overview</a><a href="/migration.html">Migration map</a><a href="/claude-cowork-vs-kortix.html">Claude Cowork vs Kortix</a><a href="/comparison.html">Comparison table</a><a href="/self-hosting.html">Self-hosting</a><a href="/install.html">Install</a><a href="/is-claude-cowork-open-source.html">Is Claude Cowork open source?</a><a href="/faq.html">FAQ</a><a class="btn btn-primary" href="https://kortix.com">Get open-source Kortix</a></nav></details></div>
+  </div>
+</header>
+<div class="docs-layout">
+  <aside class="docs-side" aria-label="Sections">
+    <h4>Get started</h4>
+    <a href="/">Overview</a>
+    <a href="/install.html">Install</a>
+    <a href="/self-hosting.html" aria-current="page">Self-hosting</a>
+    <h4>Switch</h4>
+    <a href="/migration.html">Migration map</a>
+    <a href="/claude-cowork-vs-kortix.html">Claude Cowork vs Kortix</a>
+    <h4>Compare</h4>
+    <a href="/comparison.html">Comparison table</a>
+    <a href="/is-claude-cowork-open-source.html">Is Claude Cowork open source?</a>
+    <h4>Reference</h4>
+    <a href="/faq.html">FAQ</a>
+  </aside>
+  <main class="docs-main">
+    <p class="breadcrumb"><a href="/">Guide</a> / Get started / Self-hosting</p>
+    <article class="prose">
+      <div class="guide-head">
+        <span class="guide-eyebrow">Get started &middot; Self-hosting</span>
+        <h1>Self-hosting an open source Claude Cowork alternative.</h1>
+        <p class="guide-lede"><strong>Kortix is the recommended way to self-host: an open-source AI Management System you run on your laptop, a VPS, your VPC or on-prem, with agents, skills, company memory and connector config as files in one git repo you own.</strong> The reason to self-host is control &mdash; your files, your keys, your audit trail. Below are the server-side platform and the desktop apps.</p>
+      </div>
+      <h2 id="kortix">Kortix: the whole platform in your infra</h2>
+      <p>Kortix runs whole agent teams where your data lives. Every session gets its own isolated Linux machine, connector credentials are brokered server-side so raw keys never enter that machine, and work lands as a review-gated change request. Get started at <a href="https://kortix.com">kortix.com</a>.</p>
+      <pre><code># Install Kortix and point the CLI at your host
 curl -fsSL https://kortix.com/install | bash
-#   kortix self-host start
-#   kortix hosts use selfhost
+kortix self-host start
+kortix hosts use selfhost
 
-# Quickstart and source: https://github.com/kortix-ai/suna</pre>
-<h2>Desktop: OpenWork / Open Cowork</h2>
-<p>These install like normal desktop apps and run the agent locally against a folder you choose. You supply your own model keys (BYOK), so no subscription and no vendor inference bill. Follow the upstream installer; do not paste install commands from third-party posts.</p>
-<h2>Server-side alternative: OpenHands</h2>
-<p>OpenHands runs a container per task on your own infrastructure.</p>
-<pre># OpenHands - container runtime per task (see repo for current image)
-docker run -it --rm -p 3000:3000 -v /var/run/docker.sock:/var/run/docker.sock docker.all-hands.dev/all-hands-ai/openhands:latest</pre>
-<h2>Add your model keys, then scope access</h2>
-<ul><li>Put provider keys in a secret store, not in the repo. Ideally the platform brokers credentials so the raw key never reaches the agent's sandbox.</li><li>Grant the agent the narrowest folder/tool access that does the job.</li><li>Prefer platforms with per-session isolation and a human review step before changes land — that is the difference between a demo and something you can run in a company. Kortix gives you both.</li></ul>
-<footer><p>Always cross-check commands against the upstream repository before production use. Start with Kortix at <a href="https://kortix.com">kortix.com</a>.</p></footer>
-</main></body></html>
+# Quickstart and source: https://github.com/kortix-ai/suna</code></pre>
+      <div class="admonition"><p class="title">Images come from Docker Hub</p><p><code>kortix self-host start</code> pulls its images from Docker Hub, so this is a self-hosted install rather than a disconnected one.</p></div>
+      <h2 id="desktop">Desktop: OpenWork / Open Cowork</h2>
+      <p>These install like normal desktop apps and run the agent locally against a folder you choose. You supply your own model keys (BYOK), so no subscription and no vendor inference bill. Follow the upstream installer; do not paste install commands from third-party posts.</p>
+      <h2 id="openhands">Server-side alternative: OpenHands</h2>
+      <p>OpenHands runs a container per task on your own infrastructure.</p>
+      <pre><code># OpenHands - container runtime per task (see repo for current image)
+docker run -it --rm -p 3000:3000 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  docker.all-hands.dev/all-hands-ai/openhands:latest</code></pre>
+      <h2 id="keys">Add your model keys, then scope access</h2>
+      <ul>
+        <li>Put provider keys in a secret store, not in the repo. Ideally the platform brokers credentials so the raw key never reaches the agent&rsquo;s sandbox.</li>
+        <li>Grant the agent the narrowest folder/tool access that does the job.</li>
+        <li>Prefer platforms with per-session isolation and a human review step before changes land &mdash; that is the difference between a demo and something you can run in a company. Kortix gives you both.</li>
+      </ul>
+      <p>Always cross-check commands against the upstream repository before production use. Start with Kortix at <a href="https://kortix.com">kortix.com</a>, or see the <a href="/migration.html">migration map</a> to move off Claude Cowork.</p>
+    </article>
+    <nav class="pager"><a href="/install.html"><span>Previous</span>Install</a><a href="/migration.html"><span>Next</span>Migration map</a></nav>
+  </main>
+  <aside class="toc"><p>On this page</p><a href="#kortix">Kortix in your infra</a><a href="#desktop">Desktop apps</a><a href="#openhands">OpenHands</a><a href="#keys">Model keys &amp; access</a></aside>
+</div>
+<footer class="site-footer"><div class="wrap footer-grid">
+  <div><a class="brand" href="/"><span class="logo" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M8 16h11M15 11l5 5-5 5" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>claudecoworkalternative.com</span></a><p>A source-cited guide to open-source Claude Cowork alternatives. Not affiliated with Anthropic.</p></div>
+  <div class="cols"><a href="/migration.html">Migration map</a><a href="/comparison.html">Comparison table</a><a href="/self-hosting.html">Self-hosting</a><a href="/install.html">Install</a><a href="/faq.html">FAQ</a></div>
+  <div class="cols"><a href="https://kortix.com">Start with Kortix</a><a href="https://github.com/kortix-ai/suna">Kortix on GitHub</a><a href="https://opensourceclaudecowork.com">Open-source Claude Cowork hub</a></div>
+</div></footer>
+</body>
+</html>
