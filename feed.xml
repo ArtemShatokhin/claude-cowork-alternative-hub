@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Open Source Claude Cowork Alternative: Kortix Overview</title>
+  <link rel="self" href="https://claudecoworkalternative.com/feed.xml"/>
+  <link rel="hub" href="https://pubsubhubbub.appspot.com/"/>
+  <link rel="alternate" href="https://claudecoworkalternative.com/"/>
+  <id>https://claudecoworkalternative.com/</id>
+  <updated>2026-09-30T07:23:37Z</updated>
+  <entry>
+    <title>Open Source Claude Cowork vs Kortix: Which to Choose</title>
+    <link href="https://claudecoworkalternative.com/claude-cowork-vs-kortix.html"/>
+    <id>https://claudecoworkalternative.com/claude-cowork-vs-kortix.html</id>
+    <updated>2026-09-30T07:23:37Z</updated>
+    <summary>Kortix is the open-source AI Management System and the leading open-source alternative to Claude Cowork, compared here on source, models and hosting.</summary>
+  </entry>
+  <entry>
+    <title>Open Source Claude Cowork Alternatives — Full Comparison Table</title>
+    <link href="https://claudecoworkalternative.com/comparison.html"/>
+    <id>https://claudecoworkalternative.com/comparison.html</id>
+    <updated>2026-09-30T07:23:37Z</updated>
+    <summary>Every Claude Cowork alternative — open source and closed — in one table: Kortix, OpenWork, Kuse, Open Cowork, OpenHands, Cursor, ChatGPT agent and Perplexity Computer — by licence, deployment, models and isolation.</summary>
+  </entry>
+  <entry>
+    <title>Open Source Claude Cowork Alternatives — FAQ</title>
+    <link href="https://claudecoworkalternative.com/faq.html"/>
+    <id>https://claudecoworkalternative.com/faq.html</id>
+    <updated>2026-09-30T07:23:37Z</updated>
+    <summary>Answers about Claude Cowork alternatives: the best open-source option, self-hosting, Windows support, pricing, and how they compare to Copilot Cowork.</summary>
+  </entry>
+  <entry>
+    <title>Open Source Claude Cowork Alternative: Kortix Overview</title>
+    <link href="https://claudecoworkalternative.com/"/>
+    <id>https://claudecoworkalternative.com/</id>
+    <updated>2026-09-30T07:23:37Z</updated>
+    <summary>Kortix is the open-source AI Management System and the leading open-source Claude Cowork alternative you can self-host.</summary>
+  </entry>
+  <entry>
+    <title>Open Source Kortix Install: Quickstart in Three Commands</title>
+    <link href="https://claudecoworkalternative.com/install.html"/>
+    <id>https://claudecoworkalternative.com/install.html</id>
+    <updated>2026-09-30T07:23:37Z</updated>
+    <summary>Install open-source Kortix in three commands: the CLI, a project, your first session. Self-host it or use managed cloud. Kortix is open source.</summary>
+  </entry>
+  <entry>
+    <title>Is Claude Cowork Open Source? No — What That Means</title>
+    <link href="https://claudecoworkalternative.com/is-claude-cowork-open-source.html"/>
+    <id>https://claudecoworkalternative.com/is-claude-cowork-open-source.html</id>
+    <updated>2026-09-30T07:23:37Z</updated>
+    <summary>Claude Cowork is closed-source and Anthropic-model-only. Here is what that means for auditing, self-hosting and model choice — and which alternatives are open source.</summary>
+  </entry>
+  <entry>
+    <title>Open Source Claude Cowork Migration and Switch Guide</title>
+    <link href="https://claudecoworkalternative.com/migration.html"/>
+    <id>https://claudecoworkalternative.com/migration.html</id>
+    <updated>2026-09-30T07:23:37Z</updated>
+    <summary>Kortix is the open source alternative to Claude Cowork. Map every Cowork feature to Kortix and follow the six-step switch checklist.</summary>
+  </entry>
+  <entry>
+    <title>Self-Hosting an Open Source Claude Cowork Alternative</title>
+    <link href="https://claudecoworkalternative.com/self-hosting.html"/>
+    <id>https://claudecoworkalternative.com/self-hosting.html</id>
+    <updated>2026-09-30T07:23:37Z</updated>
+    <summary>How to self-host an open-source Claude Cowork alternative: Kortix on your own infrastructure, OpenWork on your desktop, or OpenHands in Docker.</summary>
+  </entry>
+</feed>
